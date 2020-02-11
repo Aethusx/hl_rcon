@@ -63,7 +63,7 @@
             this.groupBoxRconConsole.Controls.Add(this.textBoxConsole);
             this.groupBoxRconConsole.Location = new System.Drawing.Point(8, 80);
             this.groupBoxRconConsole.Name = "groupBoxRconConsole";
-            this.groupBoxRconConsole.Size = new System.Drawing.Size(360, 252);
+            this.groupBoxRconConsole.Size = new System.Drawing.Size(365, 252);
             this.groupBoxRconConsole.TabIndex = 3;
             this.groupBoxRconConsole.TabStop = false;
             this.groupBoxRconConsole.Text = "RCON Konsola";
@@ -73,7 +73,7 @@
             this.clearCommand.AutoSize = true;
             this.clearCommand.Checked = true;
             this.clearCommand.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.clearCommand.Location = new System.Drawing.Point(258, 225);
+            this.clearCommand.Location = new System.Drawing.Point(263, 225);
             this.clearCommand.Name = "clearCommand";
             this.clearCommand.Size = new System.Drawing.Size(15, 14);
             this.clearCommand.TabIndex = 6;
@@ -81,7 +81,7 @@
             // 
             // buttonSend
             // 
-            this.buttonSend.Location = new System.Drawing.Point(279, 221);
+            this.buttonSend.Location = new System.Drawing.Point(284, 221);
             this.buttonSend.Name = "buttonSend";
             this.buttonSend.Size = new System.Drawing.Size(75, 21);
             this.buttonSend.TabIndex = 4;
@@ -93,7 +93,7 @@
             // 
             this.textBoxCommand.Location = new System.Drawing.Point(69, 221);
             this.textBoxCommand.Name = "textBoxCommand";
-            this.textBoxCommand.Size = new System.Drawing.Size(183, 20);
+            this.textBoxCommand.Size = new System.Drawing.Size(188, 20);
             this.textBoxCommand.TabIndex = 3;
             // 
             // labelInfo
@@ -110,7 +110,7 @@
             this.textBoxConsole.Location = new System.Drawing.Point(9, 19);
             this.textBoxConsole.Name = "textBoxConsole";
             this.textBoxConsole.ReadOnly = true;
-            this.textBoxConsole.Size = new System.Drawing.Size(345, 195);
+            this.textBoxConsole.Size = new System.Drawing.Size(350, 195);
             this.textBoxConsole.TabIndex = 5;
             this.textBoxConsole.Text = "";
             // 
@@ -122,7 +122,7 @@
             this.groupBoxServer.Controls.Add(this.labelPassword);
             this.groupBoxServer.Location = new System.Drawing.Point(6, 6);
             this.groupBoxServer.Name = "groupBoxServer";
-            this.groupBoxServer.Size = new System.Drawing.Size(360, 68);
+            this.groupBoxServer.Size = new System.Drawing.Size(367, 68);
             this.groupBoxServer.TabIndex = 2;
             this.groupBoxServer.TabStop = false;
             this.groupBoxServer.Text = "Dane logowania";
@@ -140,7 +140,7 @@
             // 
             this.textBoxAdress.Location = new System.Drawing.Point(85, 16);
             this.textBoxAdress.Name = "textBoxAdress";
-            this.textBoxAdress.Size = new System.Drawing.Size(269, 20);
+            this.textBoxAdress.Size = new System.Drawing.Size(276, 20);
             this.textBoxAdress.TabIndex = 5;
             this.textBoxAdress.ValidatingType = typeof(int);
             // 
@@ -149,7 +149,7 @@
             this.textBoxPassword.Location = new System.Drawing.Point(85, 42);
             this.textBoxPassword.Name = "textBoxPassword";
             this.textBoxPassword.PasswordChar = '*';
-            this.textBoxPassword.Size = new System.Drawing.Size(269, 20);
+            this.textBoxPassword.Size = new System.Drawing.Size(276, 20);
             this.textBoxPassword.TabIndex = 2;
             this.textBoxPassword.ValidatingType = typeof(int);
             // 
