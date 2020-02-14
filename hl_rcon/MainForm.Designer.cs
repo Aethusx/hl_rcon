@@ -40,18 +40,27 @@
             this.textBoxPassword = new System.Windows.Forms.MaskedTextBox();
             this.labelPassword = new System.Windows.Forms.Label();
             this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.mainTab = new System.Windows.Forms.TabPage();
+            this.tab1 = new System.Windows.Forms.TabPage();
             this.tab1_groupBox1 = new System.Windows.Forms.GroupBox();
             this.tab1_button1 = new System.Windows.Forms.Button();
             this.tab1_numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.tab1_groupBox2 = new System.Windows.Forms.GroupBox();
+            this.tab1_button2 = new System.Windows.Forms.Button();
+            this.tab1_numericUpDown2 = new System.Windows.Forms.NumericUpDown();
+            this.tab1_groupBox3 = new System.Windows.Forms.GroupBox();
+            this.tab1_label2 = new System.Windows.Forms.Label();
+            this.tab1_button3 = new System.Windows.Forms.Button();
             this.groupBoxRconConsole.SuspendLayout();
             this.groupBoxServer.SuspendLayout();
             this.tabControl1.SuspendLayout();
-            this.tabPage1.SuspendLayout();
-            this.tabPage2.SuspendLayout();
+            this.mainTab.SuspendLayout();
+            this.tab1.SuspendLayout();
             this.tab1_groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tab1_numericUpDown1)).BeginInit();
+            this.tab1_groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tab1_numericUpDown2)).BeginInit();
+            this.tab1_groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBoxRconConsole
@@ -164,8 +173,8 @@
             // 
             // tabControl1
             // 
-            this.tabControl1.Controls.Add(this.tabPage1);
-            this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.Controls.Add(this.mainTab);
+            this.tabControl1.Controls.Add(this.tab1);
             this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControl1.Location = new System.Drawing.Point(0, 0);
             this.tabControl1.Name = "tabControl1";
@@ -173,28 +182,30 @@
             this.tabControl1.Size = new System.Drawing.Size(387, 364);
             this.tabControl1.TabIndex = 7;
             // 
-            // tabPage1
+            // mainTab
             // 
-            this.tabPage1.Controls.Add(this.groupBoxServer);
-            this.tabPage1.Controls.Add(this.groupBoxRconConsole);
-            this.tabPage1.Location = new System.Drawing.Point(4, 22);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(379, 338);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "Główne";
-            this.tabPage1.UseVisualStyleBackColor = true;
+            this.mainTab.Controls.Add(this.groupBoxServer);
+            this.mainTab.Controls.Add(this.groupBoxRconConsole);
+            this.mainTab.Location = new System.Drawing.Point(4, 22);
+            this.mainTab.Name = "mainTab";
+            this.mainTab.Padding = new System.Windows.Forms.Padding(3);
+            this.mainTab.Size = new System.Drawing.Size(379, 338);
+            this.mainTab.TabIndex = 0;
+            this.mainTab.Text = "Główne";
+            this.mainTab.UseVisualStyleBackColor = true;
             // 
-            // tabPage2
+            // tab1
             // 
-            this.tabPage2.Controls.Add(this.tab1_groupBox1);
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(379, 338);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "jk_botti";
-            this.tabPage2.UseVisualStyleBackColor = true;
+            this.tab1.Controls.Add(this.tab1_groupBox3);
+            this.tab1.Controls.Add(this.tab1_groupBox2);
+            this.tab1.Controls.Add(this.tab1_groupBox1);
+            this.tab1.Location = new System.Drawing.Point(4, 22);
+            this.tab1.Name = "tab1";
+            this.tab1.Padding = new System.Windows.Forms.Padding(3);
+            this.tab1.Size = new System.Drawing.Size(379, 338);
+            this.tab1.TabIndex = 1;
+            this.tab1.Text = "jk_botti";
+            this.tab1.UseVisualStyleBackColor = true;
             // 
             // tab1_groupBox1
             // 
@@ -229,6 +240,79 @@
             this.tab1_numericUpDown1.Size = new System.Drawing.Size(120, 20);
             this.tab1_numericUpDown1.TabIndex = 0;
             // 
+            // tab1_groupBox2
+            // 
+            this.tab1_groupBox2.Controls.Add(this.tab1_button2);
+            this.tab1_groupBox2.Controls.Add(this.tab1_numericUpDown2);
+            this.tab1_groupBox2.Location = new System.Drawing.Point(8, 62);
+            this.tab1_groupBox2.Name = "tab1_groupBox2";
+            this.tab1_groupBox2.Size = new System.Drawing.Size(171, 50);
+            this.tab1_groupBox2.TabIndex = 2;
+            this.tab1_groupBox2.TabStop = false;
+            this.tab1_groupBox2.Text = "Dodaj boty manualnie";
+            // 
+            // tab1_button2
+            // 
+            this.tab1_button2.Location = new System.Drawing.Point(132, 19);
+            this.tab1_button2.Name = "tab1_button2";
+            this.tab1_button2.Size = new System.Drawing.Size(33, 20);
+            this.tab1_button2.TabIndex = 1;
+            this.tab1_button2.Text = "OK";
+            this.tab1_button2.UseVisualStyleBackColor = true;
+            this.tab1_button2.Click += new System.EventHandler(this.tab1_button2_Click);
+            // 
+            // tab1_numericUpDown2
+            // 
+            this.tab1_numericUpDown2.Location = new System.Drawing.Point(6, 19);
+            this.tab1_numericUpDown2.Maximum = new decimal(new int[] {
+            31,
+            0,
+            0,
+            0});
+            this.tab1_numericUpDown2.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.tab1_numericUpDown2.Name = "tab1_numericUpDown2";
+            this.tab1_numericUpDown2.Size = new System.Drawing.Size(120, 20);
+            this.tab1_numericUpDown2.TabIndex = 0;
+            this.tab1_numericUpDown2.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
+            // tab1_groupBox3
+            // 
+            this.tab1_groupBox3.Controls.Add(this.tab1_button3);
+            this.tab1_groupBox3.Controls.Add(this.tab1_label2);
+            this.tab1_groupBox3.Location = new System.Drawing.Point(185, 6);
+            this.tab1_groupBox3.Name = "tab1_groupBox3";
+            this.tab1_groupBox3.Size = new System.Drawing.Size(186, 106);
+            this.tab1_groupBox3.TabIndex = 3;
+            this.tab1_groupBox3.TabStop = false;
+            this.tab1_groupBox3.Text = "Przerozne opcje";
+            // 
+            // tab1_label2
+            // 
+            this.tab1_label2.AutoSize = true;
+            this.tab1_label2.Location = new System.Drawing.Point(6, 82);
+            this.tab1_label2.Name = "tab1_label2";
+            this.tab1_label2.Size = new System.Drawing.Size(16, 13);
+            this.tab1_label2.TabIndex = 0;
+            this.tab1_label2.Text = "...";
+            // 
+            // tab1_button3
+            // 
+            this.tab1_button3.Location = new System.Drawing.Point(9, 19);
+            this.tab1_button3.Name = "tab1_button3";
+            this.tab1_button3.Size = new System.Drawing.Size(171, 23);
+            this.tab1_button3.TabIndex = 2;
+            this.tab1_button3.Text = "Level Tag przy nicku botów";
+            this.tab1_button3.UseVisualStyleBackColor = true;
+            this.tab1_button3.Click += new System.EventHandler(this.tab1_button3_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -245,10 +329,14 @@
             this.groupBoxServer.ResumeLayout(false);
             this.groupBoxServer.PerformLayout();
             this.tabControl1.ResumeLayout(false);
-            this.tabPage1.ResumeLayout(false);
-            this.tabPage2.ResumeLayout(false);
+            this.mainTab.ResumeLayout(false);
+            this.tab1.ResumeLayout(false);
             this.tab1_groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.tab1_numericUpDown1)).EndInit();
+            this.tab1_groupBox2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.tab1_numericUpDown2)).EndInit();
+            this.tab1_groupBox3.ResumeLayout(false);
+            this.tab1_groupBox3.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -265,13 +353,19 @@
         private System.Windows.Forms.Label labelPassword;
         private System.Windows.Forms.CheckBox clearCommand;
         private System.Windows.Forms.TabControl tabControl1;
-        private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.TabPage mainTab;
+        private System.Windows.Forms.TabPage tab1;
         private System.Windows.Forms.GroupBox tab1_groupBox1;
         private System.Windows.Forms.Button tab1_button1;
         private System.Windows.Forms.NumericUpDown tab1_numericUpDown1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.MaskedTextBox textBoxAdress;
+        private System.Windows.Forms.GroupBox tab1_groupBox2;
+        private System.Windows.Forms.Button tab1_button2;
+        private System.Windows.Forms.NumericUpDown tab1_numericUpDown2;
+        private System.Windows.Forms.GroupBox tab1_groupBox3;
+        private System.Windows.Forms.Button tab1_button3;
+        private System.Windows.Forms.Label tab1_label2;
     }
 }
 

@@ -29,9 +29,10 @@ namespace hl_rcon
 
         private string SendRconCommand(string command, bool suppress = false)
         {
-            if (string.IsNullOrEmpty(textBoxPassword.Text) && !suppress)
+            if (string.IsNullOrEmpty(textBoxPassword.Text))
             {
-                MessageBox.Show("Musisz wpisać hasło do RCON!", "RCON Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                if(!suppress)
+                    MessageBox.Show("Musisz wpisać hasło do RCON!", "RCON Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return null;
             }
 
@@ -102,6 +103,23 @@ namespace hl_rcon
         {
             SendRconCommand($"jk_botti max_bots {tab1_numericUpDown1.Value}");
             SendRconCommand($"jk_botti min_bots {tab1_numericUpDown1.Value}", true);
+        }
+
+        private void tab1_button2_Click(object sender, EventArgs e)
+        {
+            for (int i = 0; i < tab1_numericUpDown2.Value; i++)
+                SendRconCommand($"jk_botti addbot");
+        }
+
+        private void tab1_button3_Click(object sender, EventArgs e)
+        {
+            string reply = SendRconCommand("jk_botti bot_add_level_tag");
+            if (reply == null && !reply.StartsWith("[jk_botti]"))
+                return;
+            bool flag = reply.Contains("is on");
+            SendRconCommand("jk_botti bot_add_level_tag " + (flag ? "0" : "1"));
+            tab1_label2.Text = "level_tag: " + (flag ? "off" : "on");
+
         }
     }
 }
