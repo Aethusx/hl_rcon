@@ -20,6 +20,7 @@ namespace hl_rcon
 
             if (File.Exists(PATH_SETTINGS))
             {
+                AppendLogLine($"Znaleziono plik '{PATH_SETTINGS}'. Wczytywanie opcji.");
                 string[] file = File.ReadAllLines(PATH_SETTINGS);
 
                 if (file.Length >= 1)
@@ -66,6 +67,7 @@ namespace hl_rcon
             if (command.StartsWith("rcon "))
                 command = command.Substring(5, command.Length - 5);
 
+            AppendLogLine("SendRconCommand: " + command);
             return Rcon.SendRconMessage(new Server() 
             { 
                 Address = address, 
@@ -101,6 +103,10 @@ namespace hl_rcon
             }
         }
 
+        public void AppendLogLine(string log)
+        {
+            logBox.AppendText($"[{DateTime.Now.ToString("HH:mm:ss")}] {log}{Environment.NewLine}");
+        }
         /* <=========> TAB 1 <=========> */
 
         private void tab1_button1_Click(object sender, EventArgs e)

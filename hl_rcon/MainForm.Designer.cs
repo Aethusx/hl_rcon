@@ -72,6 +72,8 @@
             this.tab2_button6 = new System.Windows.Forms.Button();
             this.tab2_button7 = new System.Windows.Forms.Button();
             this.tab2_checkBox4 = new System.Windows.Forms.CheckBox();
+            this.tab3 = new System.Windows.Forms.TabPage();
+            this.logBox = new System.Windows.Forms.RichTextBox();
             this.groupBoxRconConsole.SuspendLayout();
             this.groupBoxServer.SuspendLayout();
             this.tabControl1.SuspendLayout();
@@ -89,6 +91,7 @@
             this.tab2_groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tab2_numericUpDown2)).BeginInit();
             this.tab2_groupBox4.SuspendLayout();
+            this.tab3.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBoxRconConsole
@@ -204,6 +207,7 @@
             this.tabControl1.Controls.Add(this.mainTab);
             this.tabControl1.Controls.Add(this.tab1);
             this.tabControl1.Controls.Add(this.tab2);
+            this.tabControl1.Controls.Add(this.tab3);
             this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControl1.Location = new System.Drawing.Point(0, 0);
             this.tabControl1.Name = "tabControl1";
@@ -382,7 +386,7 @@
             this.tab2_groupBox1.Controls.Add(this.tab2_button2);
             this.tab2_groupBox1.Controls.Add(this.tab2_button1);
             this.tab2_groupBox1.Controls.Add(this.tab2_numericUpDown1);
-            this.tab2_groupBox1.Location = new System.Drawing.Point(8, 12);
+            this.tab2_groupBox1.Location = new System.Drawing.Point(8, 6);
             this.tab2_groupBox1.Name = "tab2_groupBox1";
             this.tab2_groupBox1.Size = new System.Drawing.Size(157, 52);
             this.tab2_groupBox1.TabIndex = 0;
@@ -433,7 +437,7 @@
             this.tab2_groupBox2.Controls.Add(this.tab2_checkBox3);
             this.tab2_groupBox2.Controls.Add(this.tab2_checkBox2);
             this.tab2_groupBox2.Controls.Add(this.tab2_checkBox1);
-            this.tab2_groupBox2.Location = new System.Drawing.Point(176, 12);
+            this.tab2_groupBox2.Location = new System.Drawing.Point(176, 6);
             this.tab2_groupBox2.Name = "tab2_groupBox2";
             this.tab2_groupBox2.Size = new System.Drawing.Size(195, 146);
             this.tab2_groupBox2.TabIndex = 1;
@@ -445,9 +449,9 @@
             this.tab2_checkBox1.AutoSize = true;
             this.tab2_checkBox1.Location = new System.Drawing.Point(6, 19);
             this.tab2_checkBox1.Name = "tab2_checkBox1";
-            this.tab2_checkBox1.Size = new System.Drawing.Size(178, 17);
+            this.tab2_checkBox1.Size = new System.Drawing.Size(163, 17);
             this.tab2_checkBox1.TabIndex = 0;
-            this.tab2_checkBox1.Text = "sv_cheats      (uzywanie kodów)";
+            this.tab2_checkBox1.Text = "sv_cheats (uzywanie kodów)";
             this.tab2_checkBox1.UseVisualStyleBackColor = true;
             this.tab2_checkBox1.CheckedChanged += new System.EventHandler(this.tab2_checkBox1_CheckedChanged);
             // 
@@ -456,9 +460,9 @@
             this.tab2_checkBox2.AutoSize = true;
             this.tab2_checkBox2.Location = new System.Drawing.Point(6, 42);
             this.tab2_checkBox2.Name = "tab2_checkBox2";
-            this.tab2_checkBox2.Size = new System.Drawing.Size(174, 17);
+            this.tab2_checkBox2.Size = new System.Drawing.Size(171, 17);
             this.tab2_checkBox2.TabIndex = 1;
-            this.tab2_checkBox2.Text = "mp_flashlight  (uzywanie latarki)";
+            this.tab2_checkBox2.Text = "mp_flashlight (uzywanie latarki)";
             this.tab2_checkBox2.UseVisualStyleBackColor = true;
             this.tab2_checkBox2.CheckedChanged += new System.EventHandler(this.tab2_checkBox2_CheckedChanged);
             // 
@@ -488,7 +492,7 @@
             this.tab2_groupBox3.Controls.Add(this.tab2_button5);
             this.tab2_groupBox3.Controls.Add(this.tab2_button4);
             this.tab2_groupBox3.Controls.Add(this.tab2_numericUpDown2);
-            this.tab2_groupBox3.Location = new System.Drawing.Point(8, 70);
+            this.tab2_groupBox3.Location = new System.Drawing.Point(8, 64);
             this.tab2_groupBox3.Name = "tab2_groupBox3";
             this.tab2_groupBox3.Size = new System.Drawing.Size(157, 52);
             this.tab2_groupBox3.TabIndex = 3;
@@ -532,7 +536,7 @@
             this.tab2_groupBox4.Controls.Add(this.tab2_button7);
             this.tab2_groupBox4.Controls.Add(this.tab2_button6);
             this.tab2_groupBox4.Controls.Add(this.tab2_comboBox1);
-            this.tab2_groupBox4.Location = new System.Drawing.Point(8, 128);
+            this.tab2_groupBox4.Location = new System.Drawing.Point(8, 122);
             this.tab2_groupBox4.Name = "tab2_groupBox4";
             this.tab2_groupBox4.Size = new System.Drawing.Size(157, 77);
             this.tab2_groupBox4.TabIndex = 4;
@@ -578,6 +582,27 @@
             this.tab2_checkBox4.UseVisualStyleBackColor = true;
             this.tab2_checkBox4.CheckedChanged += new System.EventHandler(this.tab2_checkBox4_CheckedChanged);
             // 
+            // tab3
+            // 
+            this.tab3.Controls.Add(this.logBox);
+            this.tab3.Location = new System.Drawing.Point(4, 22);
+            this.tab3.Name = "tab3";
+            this.tab3.Padding = new System.Windows.Forms.Padding(3);
+            this.tab3.Size = new System.Drawing.Size(379, 338);
+            this.tab3.TabIndex = 3;
+            this.tab3.Text = "Logi aplikacji";
+            this.tab3.UseVisualStyleBackColor = true;
+            // 
+            // logBox
+            // 
+            this.logBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.logBox.Location = new System.Drawing.Point(3, 3);
+            this.logBox.Name = "logBox";
+            this.logBox.ReadOnly = true;
+            this.logBox.Size = new System.Drawing.Size(373, 332);
+            this.logBox.TabIndex = 0;
+            this.logBox.Text = "";
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -610,6 +635,7 @@
             this.tab2_groupBox3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.tab2_numericUpDown2)).EndInit();
             this.tab2_groupBox4.ResumeLayout(false);
+            this.tab3.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -660,6 +686,8 @@
         private System.Windows.Forms.Button tab2_button6;
         private System.Windows.Forms.ComboBox tab2_comboBox1;
         private System.Windows.Forms.CheckBox tab2_checkBox4;
+        private System.Windows.Forms.TabPage tab3;
+        private System.Windows.Forms.RichTextBox logBox;
     }
 }
 
