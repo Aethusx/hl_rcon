@@ -61,6 +61,8 @@
             this.tab2_groupBox2 = new System.Windows.Forms.GroupBox();
             this.tab2_checkBox1 = new System.Windows.Forms.CheckBox();
             this.tab2_checkBox2 = new System.Windows.Forms.CheckBox();
+            this.tab2_checkBox3 = new System.Windows.Forms.CheckBox();
+            this.tab2_button3 = new System.Windows.Forms.Button();
             this.groupBoxRconConsole.SuspendLayout();
             this.groupBoxServer.SuspendLayout();
             this.tabControl1.SuspendLayout();
@@ -412,6 +414,8 @@
             // 
             // tab2_groupBox2
             // 
+            this.tab2_groupBox2.Controls.Add(this.tab2_button3);
+            this.tab2_groupBox2.Controls.Add(this.tab2_checkBox3);
             this.tab2_groupBox2.Controls.Add(this.tab2_checkBox2);
             this.tab2_groupBox2.Controls.Add(this.tab2_checkBox1);
             this.tab2_groupBox2.Location = new System.Drawing.Point(176, 12);
@@ -426,9 +430,9 @@
             this.tab2_checkBox1.AutoSize = true;
             this.tab2_checkBox1.Location = new System.Drawing.Point(6, 19);
             this.tab2_checkBox1.Name = "tab2_checkBox1";
-            this.tab2_checkBox1.Size = new System.Drawing.Size(175, 17);
+            this.tab2_checkBox1.Size = new System.Drawing.Size(178, 17);
             this.tab2_checkBox1.TabIndex = 0;
-            this.tab2_checkBox1.Text = "sv_cheats     (uzywanie kodów)";
+            this.tab2_checkBox1.Text = "sv_cheats      (uzywanie kodów)";
             this.tab2_checkBox1.UseVisualStyleBackColor = true;
             this.tab2_checkBox1.CheckedChanged += new System.EventHandler(this.tab2_checkBox1_CheckedChanged);
             // 
@@ -437,11 +441,32 @@
             this.tab2_checkBox2.AutoSize = true;
             this.tab2_checkBox2.Location = new System.Drawing.Point(6, 42);
             this.tab2_checkBox2.Name = "tab2_checkBox2";
-            this.tab2_checkBox2.Size = new System.Drawing.Size(171, 17);
+            this.tab2_checkBox2.Size = new System.Drawing.Size(174, 17);
             this.tab2_checkBox2.TabIndex = 1;
-            this.tab2_checkBox2.Text = "mp_flashlight (uzywanie latarki)";
+            this.tab2_checkBox2.Text = "mp_flashlight  (uzywanie latarki)";
             this.tab2_checkBox2.UseVisualStyleBackColor = true;
             this.tab2_checkBox2.CheckedChanged += new System.EventHandler(this.tab2_checkBox2_CheckedChanged);
+            // 
+            // tab2_checkBox3
+            // 
+            this.tab2_checkBox3.AutoSize = true;
+            this.tab2_checkBox3.Location = new System.Drawing.Point(6, 65);
+            this.tab2_checkBox3.Name = "tab2_checkBox3";
+            this.tab2_checkBox3.Size = new System.Drawing.Size(160, 17);
+            this.tab2_checkBox3.TabIndex = 2;
+            this.tab2_checkBox3.Text = "mp_footsteps (slychac kroki)";
+            this.tab2_checkBox3.UseVisualStyleBackColor = true;
+            this.tab2_checkBox3.CheckedChanged += new System.EventHandler(this.tab2_checkBox3_CheckedChanged);
+            // 
+            // tab2_button3
+            // 
+            this.tab2_button3.Location = new System.Drawing.Point(6, 98);
+            this.tab2_button3.Name = "tab2_button3";
+            this.tab2_button3.Size = new System.Drawing.Size(183, 23);
+            this.tab2_button3.TabIndex = 3;
+            this.tab2_button3.Text = "Sync";
+            this.tab2_button3.UseVisualStyleBackColor = true;
+            this.tab2_button3.Click += new System.EventHandler(this.tab2_button3_Click);
             // 
             // MainForm
             // 
@@ -511,6 +536,8 @@
         private System.Windows.Forms.GroupBox tab2_groupBox2;
         private System.Windows.Forms.CheckBox tab2_checkBox1;
         private System.Windows.Forms.CheckBox tab2_checkBox2;
+        private System.Windows.Forms.CheckBox tab2_checkBox3;
+        private System.Windows.Forms.Button tab2_button3;
     }
 }
 

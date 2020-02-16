@@ -152,6 +152,16 @@ namespace hl_rcon
             public int IntValue() => (!String.IsNullOrEmpty(value)) ? Convert.ToInt32(value) : 0;
 
             public decimal DecimalValue() => (!String.IsNullOrEmpty(value)) ? Convert.ToDecimal(value) : 0;
+            
+            public bool? BoolValue()
+            {
+                if (value == "1")
+                    return true;
+                else if (value == "0")
+                    return false;
+                else
+                    return null;
+            }
 
         }
 
@@ -190,6 +200,18 @@ namespace hl_rcon
         private void tab2_checkBox2_CheckedChanged(object sender, EventArgs e)
         {
             SendRconCommand("mp_flashlight " + BoolToString(tab2_checkBox2.Checked));
+        }
+
+        private void tab2_checkBox3_CheckedChanged(object sender, EventArgs e)
+        {
+            SendRconCommand("mp_footsteps " + BoolToString(tab2_checkBox3.Checked));
+        }
+
+        private void tab2_button3_Click(object sender, EventArgs e)
+        {
+            tab2_checkBox1.Checked = tab2_SendAndHandleRconCommand("sv_cheats").BoolValue() ?? false;
+            tab2_checkBox2.Checked = tab2_SendAndHandleRconCommand("mp_flashlight").BoolValue() ?? false;
+            tab2_checkBox3.Checked = tab2_SendAndHandleRconCommand("mp_footsteps").BoolValue() ?? false;
         }
     }
 }
