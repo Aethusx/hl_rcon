@@ -53,6 +53,11 @@
             this.tab1_numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.tab1_button4 = new System.Windows.Forms.Button();
             this.tab1_button5 = new System.Windows.Forms.Button();
+            this.tab2 = new System.Windows.Forms.TabPage();
+            this.tab2_groupBox1 = new System.Windows.Forms.GroupBox();
+            this.tab2_numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.tab2_button1 = new System.Windows.Forms.Button();
+            this.tab2_button2 = new System.Windows.Forms.Button();
             this.groupBoxRconConsole.SuspendLayout();
             this.groupBoxServer.SuspendLayout();
             this.tabControl1.SuspendLayout();
@@ -63,6 +68,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.tab1_numericUpDown2)).BeginInit();
             this.tab1_groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tab1_numericUpDown1)).BeginInit();
+            this.tab2.SuspendLayout();
+            this.tab2_groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tab2_numericUpDown1)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBoxRconConsole
@@ -177,6 +185,7 @@
             // 
             this.tabControl1.Controls.Add(this.mainTab);
             this.tabControl1.Controls.Add(this.tab1);
+            this.tabControl1.Controls.Add(this.tab2);
             this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControl1.Location = new System.Drawing.Point(0, 0);
             this.tabControl1.Name = "tabControl1";
@@ -337,6 +346,65 @@
             this.tab1_button5.UseVisualStyleBackColor = true;
             this.tab1_button5.Click += new System.EventHandler(this.tab1_button5_Click);
             // 
+            // tab2
+            // 
+            this.tab2.Controls.Add(this.tab2_groupBox1);
+            this.tab2.Location = new System.Drawing.Point(4, 22);
+            this.tab2.Name = "tab2";
+            this.tab2.Size = new System.Drawing.Size(379, 338);
+            this.tab2.TabIndex = 2;
+            this.tab2.Text = "Opcje Serwera";
+            this.tab2.UseVisualStyleBackColor = true;
+            // 
+            // tab2_groupBox1
+            // 
+            this.tab2_groupBox1.Controls.Add(this.tab2_button2);
+            this.tab2_groupBox1.Controls.Add(this.tab2_button1);
+            this.tab2_groupBox1.Controls.Add(this.tab2_numericUpDown1);
+            this.tab2_groupBox1.Location = new System.Drawing.Point(8, 14);
+            this.tab2_groupBox1.Name = "tab2_groupBox1";
+            this.tab2_groupBox1.Size = new System.Drawing.Size(157, 52);
+            this.tab2_groupBox1.TabIndex = 0;
+            this.tab2_groupBox1.TabStop = false;
+            this.tab2_groupBox1.Text = "Grawitacja";
+            // 
+            // tab2_numericUpDown1
+            // 
+            this.tab2_numericUpDown1.Location = new System.Drawing.Point(6, 19);
+            this.tab2_numericUpDown1.Maximum = new decimal(new int[] {
+            10000,
+            0,
+            0,
+            0});
+            this.tab2_numericUpDown1.Minimum = new decimal(new int[] {
+            10000,
+            0,
+            0,
+            -2147483648});
+            this.tab2_numericUpDown1.Name = "tab2_numericUpDown1";
+            this.tab2_numericUpDown1.Size = new System.Drawing.Size(70, 20);
+            this.tab2_numericUpDown1.TabIndex = 0;
+            // 
+            // tab2_button1
+            // 
+            this.tab2_button1.Location = new System.Drawing.Point(82, 19);
+            this.tab2_button1.Name = "tab2_button1";
+            this.tab2_button1.Size = new System.Drawing.Size(31, 20);
+            this.tab2_button1.TabIndex = 1;
+            this.tab2_button1.Text = "Ok";
+            this.tab2_button1.UseVisualStyleBackColor = true;
+            this.tab2_button1.Click += new System.EventHandler(this.tab2_button1_Click);
+            // 
+            // tab2_button2
+            // 
+            this.tab2_button2.Location = new System.Drawing.Point(116, 19);
+            this.tab2_button2.Name = "tab2_button2";
+            this.tab2_button2.Size = new System.Drawing.Size(31, 20);
+            this.tab2_button2.TabIndex = 2;
+            this.tab2_button2.Text = "S";
+            this.tab2_button2.UseVisualStyleBackColor = true;
+            this.tab2_button2.Click += new System.EventHandler(this.tab2_button2_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -361,6 +429,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.tab1_numericUpDown2)).EndInit();
             this.tab1_groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.tab1_numericUpDown1)).EndInit();
+            this.tab2.ResumeLayout(false);
+            this.tab2_groupBox1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.tab2_numericUpDown1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -392,6 +463,11 @@
         private System.Windows.Forms.Label tab1_label2;
         private System.Windows.Forms.Button tab1_button4;
         private System.Windows.Forms.Button tab1_button5;
+        private System.Windows.Forms.TabPage tab2;
+        private System.Windows.Forms.GroupBox tab2_groupBox1;
+        private System.Windows.Forms.Button tab2_button1;
+        private System.Windows.Forms.NumericUpDown tab2_numericUpDown1;
+        private System.Windows.Forms.Button tab2_button2;
     }
 }
 

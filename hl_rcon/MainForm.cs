@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Windows.Forms;
 using System.IO;
+using System.Text.RegularExpressions;
+
 namespace hl_rcon
 {
 
@@ -98,7 +100,8 @@ namespace hl_rcon
             }
         }
 
-        /* <========= TAB 1 <=========> */
+        /* <=========> TAB 1 <=========> */
+
         private void tab1_button1_Click(object sender, EventArgs e)
         {
             SendRconCommand($"jk_botti max_bots {tab1_numericUpDown1.Value}");
@@ -133,6 +136,54 @@ namespace hl_rcon
         private void tab1_button5_Click(object sender, EventArgs e)
         {
             tab1_SendAndHandleRconCommand("jk_botti randomize_bots_on_mapchange", "is on", "random_bots");
+        }
+
+        /* <=========> TAB 2 <=========> */
+        private class tab2_Command
+        {
+            public string command, value;
+            public tab2_Command(string command, string value)
+            {
+                this.command = command;
+                this.value = value;
+            }
+
+            public int IntValue()
+            {
+                return (!String.IsNullOrEmpty(value)) ? Convert.ToInt32(value) : 0;
+            }
+
+            public decimal DecimalValue()
+            {
+                return (!String.IsNullOrEmpty(value)) ? Convert.ToDecimal(value) : 0;
+            }
+        }
+
+        Regex tab2_REGEX = new Regex("(?<=\")[\\w]+(?!=\")");
+
+        private tab2_Command tab2_SendAndHandleRconCommand(string command)
+        {
+            string reply = SendRconCommand(command);
+
+            if (!reply.Contains(" is "))
+                return null;
+
+            MatchCollection matches = tab2_REGEX.Matches(reply);
+
+            if (matches.Count != 2)
+                return null;
+            
+            return new tab2_Command(matches[0].Value,matches[1].Value);
+        }
+
+        private void tab2_button1_Click(object sender, EventArgs e)
+        {
+            SendRconCommand("sv_gravity " + tab2_numericUpDown1.Value);
+        }
+
+        private void tab2_button2_Click(object sender, EventArgs e)
+        {
+            tab2_numericUpDown1.Value = tab2_SendAndHandleRconCommand("sv_gravity").DecimalValue();
         }
     }
 }
