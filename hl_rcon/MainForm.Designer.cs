@@ -71,6 +71,7 @@
             this.tab2_comboBox1 = new System.Windows.Forms.ComboBox();
             this.tab2_button6 = new System.Windows.Forms.Button();
             this.tab2_button7 = new System.Windows.Forms.Button();
+            this.tab2_checkBox4 = new System.Windows.Forms.CheckBox();
             this.groupBoxRconConsole.SuspendLayout();
             this.groupBoxServer.SuspendLayout();
             this.tabControl1.SuspendLayout();
@@ -261,7 +262,7 @@
             // tab1_label2
             // 
             this.tab1_label2.AutoSize = true;
-            this.tab1_label2.Location = new System.Drawing.Point(6, 115);
+            this.tab1_label2.Location = new System.Drawing.Point(6, 103);
             this.tab1_label2.Name = "tab1_label2";
             this.tab1_label2.Size = new System.Drawing.Size(16, 13);
             this.tab1_label2.TabIndex = 0;
@@ -427,13 +428,14 @@
             // 
             // tab2_groupBox2
             // 
+            this.tab2_groupBox2.Controls.Add(this.tab2_checkBox4);
             this.tab2_groupBox2.Controls.Add(this.tab2_button3);
             this.tab2_groupBox2.Controls.Add(this.tab2_checkBox3);
             this.tab2_groupBox2.Controls.Add(this.tab2_checkBox2);
             this.tab2_groupBox2.Controls.Add(this.tab2_checkBox1);
             this.tab2_groupBox2.Location = new System.Drawing.Point(176, 12);
             this.tab2_groupBox2.Name = "tab2_groupBox2";
-            this.tab2_groupBox2.Size = new System.Drawing.Size(195, 127);
+            this.tab2_groupBox2.Size = new System.Drawing.Size(195, 146);
             this.tab2_groupBox2.TabIndex = 1;
             this.tab2_groupBox2.TabStop = false;
             this.tab2_groupBox2.Text = "Opcje";
@@ -473,7 +475,7 @@
             // 
             // tab2_button3
             // 
-            this.tab2_button3.Location = new System.Drawing.Point(6, 98);
+            this.tab2_button3.Location = new System.Drawing.Point(6, 111);
             this.tab2_button3.Name = "tab2_button3";
             this.tab2_button3.Size = new System.Drawing.Size(183, 23);
             this.tab2_button3.TabIndex = 3;
@@ -565,6 +567,17 @@
             this.tab2_button7.UseVisualStyleBackColor = true;
             this.tab2_button7.Click += new System.EventHandler(this.tab2_button7_Click);
             // 
+            // tab2_checkBox4
+            // 
+            this.tab2_checkBox4.AutoSize = true;
+            this.tab2_checkBox4.Location = new System.Drawing.Point(6, 88);
+            this.tab2_checkBox4.Name = "tab2_checkBox4";
+            this.tab2_checkBox4.Size = new System.Drawing.Size(176, 17);
+            this.tab2_checkBox4.TabIndex = 4;
+            this.tab2_checkBox4.Text = "allow_spectators (obserwatorzy)";
+            this.tab2_checkBox4.UseVisualStyleBackColor = true;
+            this.tab2_checkBox4.CheckedChanged += new System.EventHandler(this.tab2_checkBox4_CheckedChanged);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -646,6 +659,7 @@
         private System.Windows.Forms.Button tab2_button7;
         private System.Windows.Forms.Button tab2_button6;
         private System.Windows.Forms.ComboBox tab2_comboBox1;
+        private System.Windows.Forms.CheckBox tab2_checkBox4;
     }
 }
 

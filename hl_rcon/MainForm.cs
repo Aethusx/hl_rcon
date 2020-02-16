@@ -207,11 +207,16 @@ namespace hl_rcon
             SendRconCommand("mp_footsteps " + BoolToString(tab2_checkBox3.Checked));
         }
 
+        private void tab2_checkBox4_CheckedChanged(object sender, EventArgs e)
+        {
+            SendRconCommand("allow_spectators " + BoolToString(tab2_checkBox4.Checked));
+        }
         private void tab2_button3_Click(object sender, EventArgs e)
         {
             tab2_checkBox1.Checked = tab2_SendAndHandleRconCommand("sv_cheats").BoolValue() ?? false;
             tab2_checkBox2.Checked = tab2_SendAndHandleRconCommand("mp_flashlight").BoolValue() ?? false;
             tab2_checkBox3.Checked = tab2_SendAndHandleRconCommand("mp_footsteps").BoolValue() ?? false;
+            tab2_checkBox4.Checked = tab2_SendAndHandleRconCommand("allow_spectators").BoolValue() ?? false;
         }
 
         private void tab2_button4_Click(object sender, EventArgs e)
@@ -241,6 +246,8 @@ namespace hl_rcon
         {
             SendRconCommand("changelevel " + tab2_comboBox1.Text);
         }
+
+
     }
 }
 
