@@ -237,7 +237,7 @@ namespace hl_rcon
                 tab2_comboBox1.Items.Add(maps[i].Substring(0, maps[i].Length - 4)); /* trzeba wykasowac .bsp */
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void tab2_button7_Click(object sender, EventArgs e)
         {
             SendRconCommand("changelevel " + tab2_comboBox1.Text);
         }

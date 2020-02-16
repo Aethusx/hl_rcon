@@ -70,7 +70,7 @@
             this.tab2_groupBox4 = new System.Windows.Forms.GroupBox();
             this.tab2_comboBox1 = new System.Windows.Forms.ComboBox();
             this.tab2_button6 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.tab2_button7 = new System.Windows.Forms.Button();
             this.groupBoxRconConsole.SuspendLayout();
             this.groupBoxServer.SuspendLayout();
             this.tabControl1.SuspendLayout();
@@ -527,7 +527,7 @@
             // 
             // tab2_groupBox4
             // 
-            this.tab2_groupBox4.Controls.Add(this.button1);
+            this.tab2_groupBox4.Controls.Add(this.tab2_button7);
             this.tab2_groupBox4.Controls.Add(this.tab2_button6);
             this.tab2_groupBox4.Controls.Add(this.tab2_comboBox1);
             this.tab2_groupBox4.Location = new System.Drawing.Point(8, 128);
@@ -555,15 +555,15 @@
             this.tab2_button6.UseVisualStyleBackColor = true;
             this.tab2_button6.Click += new System.EventHandler(this.tab2_button6_Click);
             // 
-            // button1
+            // tab2_button7
             // 
-            this.button1.Location = new System.Drawing.Point(6, 46);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(70, 21);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Ustaw";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.tab2_button7.Location = new System.Drawing.Point(6, 46);
+            this.tab2_button7.Name = "tab2_button7";
+            this.tab2_button7.Size = new System.Drawing.Size(70, 21);
+            this.tab2_button7.TabIndex = 2;
+            this.tab2_button7.Text = "Ustaw";
+            this.tab2_button7.UseVisualStyleBackColor = true;
+            this.tab2_button7.Click += new System.EventHandler(this.tab2_button7_Click);
             // 
             // MainForm
             // 
@@ -643,7 +643,7 @@
         private System.Windows.Forms.Button tab2_button4;
         private System.Windows.Forms.NumericUpDown tab2_numericUpDown2;
         private System.Windows.Forms.GroupBox tab2_groupBox4;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button tab2_button7;
         private System.Windows.Forms.Button tab2_button6;
         private System.Windows.Forms.ComboBox tab2_comboBox1;
     }
