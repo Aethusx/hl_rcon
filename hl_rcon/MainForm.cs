@@ -74,6 +74,7 @@ namespace hl_rcon
             }, command);
         }
 
+        private string BoolToString(bool value, bool invert = false) => (!invert) ? ((value) ? "1" : "0") : ((value) ? "0" : "1");
         private void buttonSend_Click(object sender, EventArgs e)
         {
             if (string.IsNullOrEmpty(textBoxCommand.Text))
@@ -148,15 +149,10 @@ namespace hl_rcon
                 this.value = value;
             }
 
-            public int IntValue()
-            {
-                return (!String.IsNullOrEmpty(value)) ? Convert.ToInt32(value) : 0;
-            }
+            public int IntValue() => (!String.IsNullOrEmpty(value)) ? Convert.ToInt32(value) : 0;
 
-            public decimal DecimalValue()
-            {
-                return (!String.IsNullOrEmpty(value)) ? Convert.ToDecimal(value) : 0;
-            }
+            public decimal DecimalValue() => (!String.IsNullOrEmpty(value)) ? Convert.ToDecimal(value) : 0;
+
         }
 
         Regex tab2_REGEX = new Regex("(?<=\")[\\w]+(?!=\")");
@@ -184,6 +180,11 @@ namespace hl_rcon
         private void tab2_button2_Click(object sender, EventArgs e)
         {
             tab2_numericUpDown1.Value = tab2_SendAndHandleRconCommand("sv_gravity").DecimalValue();
+        }
+
+        private void tab2_checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            SendRconCommand("sv_cheats " + BoolToString(tab2_checkBox1.Checked));
         }
     }
 }

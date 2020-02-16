@@ -58,6 +58,8 @@
             this.tab2_numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.tab2_button1 = new System.Windows.Forms.Button();
             this.tab2_button2 = new System.Windows.Forms.Button();
+            this.tab2_groupBox2 = new System.Windows.Forms.GroupBox();
+            this.tab2_checkBox1 = new System.Windows.Forms.CheckBox();
             this.groupBoxRconConsole.SuspendLayout();
             this.groupBoxServer.SuspendLayout();
             this.tabControl1.SuspendLayout();
@@ -71,6 +73,7 @@
             this.tab2.SuspendLayout();
             this.tab2_groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tab2_numericUpDown1)).BeginInit();
+            this.tab2_groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBoxRconConsole
@@ -348,6 +351,7 @@
             // 
             // tab2
             // 
+            this.tab2.Controls.Add(this.tab2_groupBox2);
             this.tab2.Controls.Add(this.tab2_groupBox1);
             this.tab2.Location = new System.Drawing.Point(4, 22);
             this.tab2.Name = "tab2";
@@ -361,7 +365,7 @@
             this.tab2_groupBox1.Controls.Add(this.tab2_button2);
             this.tab2_groupBox1.Controls.Add(this.tab2_button1);
             this.tab2_groupBox1.Controls.Add(this.tab2_numericUpDown1);
-            this.tab2_groupBox1.Location = new System.Drawing.Point(8, 14);
+            this.tab2_groupBox1.Location = new System.Drawing.Point(8, 12);
             this.tab2_groupBox1.Name = "tab2_groupBox1";
             this.tab2_groupBox1.Size = new System.Drawing.Size(157, 52);
             this.tab2_groupBox1.TabIndex = 0;
@@ -405,6 +409,27 @@
             this.tab2_button2.UseVisualStyleBackColor = true;
             this.tab2_button2.Click += new System.EventHandler(this.tab2_button2_Click);
             // 
+            // tab2_groupBox2
+            // 
+            this.tab2_groupBox2.Controls.Add(this.tab2_checkBox1);
+            this.tab2_groupBox2.Location = new System.Drawing.Point(176, 12);
+            this.tab2_groupBox2.Name = "tab2_groupBox2";
+            this.tab2_groupBox2.Size = new System.Drawing.Size(195, 127);
+            this.tab2_groupBox2.TabIndex = 1;
+            this.tab2_groupBox2.TabStop = false;
+            this.tab2_groupBox2.Text = "groupBox1";
+            // 
+            // tab2_checkBox1
+            // 
+            this.tab2_checkBox1.AutoSize = true;
+            this.tab2_checkBox1.Location = new System.Drawing.Point(6, 19);
+            this.tab2_checkBox1.Name = "tab2_checkBox1";
+            this.tab2_checkBox1.Size = new System.Drawing.Size(75, 17);
+            this.tab2_checkBox1.TabIndex = 0;
+            this.tab2_checkBox1.Text = "sv_cheats";
+            this.tab2_checkBox1.UseVisualStyleBackColor = true;
+            this.tab2_checkBox1.CheckedChanged += new System.EventHandler(this.tab2_checkBox1_CheckedChanged);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -432,6 +457,8 @@
             this.tab2.ResumeLayout(false);
             this.tab2_groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.tab2_numericUpDown1)).EndInit();
+            this.tab2_groupBox2.ResumeLayout(false);
+            this.tab2_groupBox2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -468,6 +495,8 @@
         private System.Windows.Forms.Button tab2_button1;
         private System.Windows.Forms.NumericUpDown tab2_numericUpDown1;
         private System.Windows.Forms.Button tab2_button2;
+        private System.Windows.Forms.GroupBox tab2_groupBox2;
+        private System.Windows.Forms.CheckBox tab2_checkBox1;
     }
 }
 
