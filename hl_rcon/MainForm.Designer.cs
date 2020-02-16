@@ -52,6 +52,7 @@
             this.tab1_button1 = new System.Windows.Forms.Button();
             this.tab1_numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.tab1_button4 = new System.Windows.Forms.Button();
+            this.tab1_button5 = new System.Windows.Forms.Button();
             this.groupBoxRconConsole.SuspendLayout();
             this.groupBoxServer.SuspendLayout();
             this.tabControl1.SuspendLayout();
@@ -210,12 +211,13 @@
             // 
             // tab1_groupBox3
             // 
+            this.tab1_groupBox3.Controls.Add(this.tab1_button5);
             this.tab1_groupBox3.Controls.Add(this.tab1_button4);
             this.tab1_groupBox3.Controls.Add(this.tab1_button3);
             this.tab1_groupBox3.Controls.Add(this.tab1_label2);
             this.tab1_groupBox3.Location = new System.Drawing.Point(185, 6);
             this.tab1_groupBox3.Name = "tab1_groupBox3";
-            this.tab1_groupBox3.Size = new System.Drawing.Size(186, 106);
+            this.tab1_groupBox3.Size = new System.Drawing.Size(186, 131);
             this.tab1_groupBox3.TabIndex = 3;
             this.tab1_groupBox3.TabStop = false;
             this.tab1_groupBox3.Text = "Przerozne opcje";
@@ -233,7 +235,7 @@
             // tab1_label2
             // 
             this.tab1_label2.AutoSize = true;
-            this.tab1_label2.Location = new System.Drawing.Point(6, 82);
+            this.tab1_label2.Location = new System.Drawing.Point(6, 115);
             this.tab1_label2.Name = "tab1_label2";
             this.tab1_label2.Size = new System.Drawing.Size(16, 13);
             this.tab1_label2.TabIndex = 0;
@@ -325,6 +327,16 @@
             this.tab1_button4.UseVisualStyleBackColor = true;
             this.tab1_button4.Click += new System.EventHandler(this.tab1_button4_Click);
             // 
+            // tab1_button5
+            // 
+            this.tab1_button5.Location = new System.Drawing.Point(9, 77);
+            this.tab1_button5.Name = "tab1_button5";
+            this.tab1_button5.Size = new System.Drawing.Size(171, 23);
+            this.tab1_button5.TabIndex = 4;
+            this.tab1_button5.Text = "Losowe boty przy zmianie mapy";
+            this.tab1_button5.UseVisualStyleBackColor = true;
+            this.tab1_button5.Click += new System.EventHandler(this.tab1_button5_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -379,6 +391,7 @@
         private System.Windows.Forms.Button tab1_button3;
         private System.Windows.Forms.Label tab1_label2;
         private System.Windows.Forms.Button tab1_button4;
+        private System.Windows.Forms.Button tab1_button5;
     }
 }
 

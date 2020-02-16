@@ -111,25 +111,28 @@ namespace hl_rcon
                 SendRconCommand($"jk_botti addbot");
         }
 
-        private void tab1_button3_Click(object sender, EventArgs e)
+        private void tab1_SendAndHandleRconCommand(string command, string reply_key, string label_text)
         {
-            string reply = SendRconCommand("jk_botti bot_add_level_tag");
+            string reply = SendRconCommand(command);
             if (reply == null && !reply.StartsWith("[jk_botti]"))
                 return;
-            bool flag = reply.Contains("is on");
-            SendRconCommand("jk_botti bot_add_level_tag " + (flag ? "0" : "1"));
-            tab1_label2.Text = "level_tag: " + (flag ? "off" : "on");
-
+            bool flag = reply.Contains(reply_key);
+            SendRconCommand(command + " " + (flag ? "0" : "1"));
+            tab1_label2.Text = label_text + ": " + (flag ? "off" : "on");
+        }
+        private void tab1_button3_Click(object sender, EventArgs e)
+        {
+            tab1_SendAndHandleRconCommand("jk_botti bot_add_level_tag", "is on", "level_tag");
         }
 
         private void tab1_button4_Click(object sender, EventArgs e)
         {
-            string reply = SendRconCommand("jk_botti random_color");
-            if (reply == null && !reply.StartsWith("[jk_botti"))
-                return;
-            bool flag = reply.Contains("ENABLED");
-            SendRconCommand("jk_botti random_color " + (flag ? "0" : "1"));
-            tab1_label2.Text = "random_color: " + (flag ? "off" : "on");
+            tab1_SendAndHandleRconCommand("jk_botti random_color", "ENABLED", "random_color");
+        }
+
+        private void tab1_button5_Click(object sender, EventArgs e)
+        {
+            tab1_SendAndHandleRconCommand("jk_botti randomize_bots_on_mapchange", "is on", "random_bots");
         }
     }
 }
