@@ -42,25 +42,26 @@
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.mainTab = new System.Windows.Forms.TabPage();
             this.tab1 = new System.Windows.Forms.TabPage();
-            this.tab1_groupBox1 = new System.Windows.Forms.GroupBox();
-            this.tab1_button1 = new System.Windows.Forms.Button();
-            this.tab1_numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.tab1_groupBox3 = new System.Windows.Forms.GroupBox();
+            this.tab1_button3 = new System.Windows.Forms.Button();
+            this.tab1_label2 = new System.Windows.Forms.Label();
             this.tab1_groupBox2 = new System.Windows.Forms.GroupBox();
             this.tab1_button2 = new System.Windows.Forms.Button();
             this.tab1_numericUpDown2 = new System.Windows.Forms.NumericUpDown();
-            this.tab1_groupBox3 = new System.Windows.Forms.GroupBox();
-            this.tab1_label2 = new System.Windows.Forms.Label();
-            this.tab1_button3 = new System.Windows.Forms.Button();
+            this.tab1_groupBox1 = new System.Windows.Forms.GroupBox();
+            this.tab1_button1 = new System.Windows.Forms.Button();
+            this.tab1_numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.tab1_button4 = new System.Windows.Forms.Button();
             this.groupBoxRconConsole.SuspendLayout();
             this.groupBoxServer.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.mainTab.SuspendLayout();
             this.tab1.SuspendLayout();
-            this.tab1_groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.tab1_numericUpDown1)).BeginInit();
+            this.tab1_groupBox3.SuspendLayout();
             this.tab1_groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tab1_numericUpDown2)).BeginInit();
-            this.tab1_groupBox3.SuspendLayout();
+            this.tab1_groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tab1_numericUpDown1)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBoxRconConsole
@@ -207,38 +208,36 @@
             this.tab1.Text = "jk_botti";
             this.tab1.UseVisualStyleBackColor = true;
             // 
-            // tab1_groupBox1
+            // tab1_groupBox3
             // 
-            this.tab1_groupBox1.Controls.Add(this.tab1_button1);
-            this.tab1_groupBox1.Controls.Add(this.tab1_numericUpDown1);
-            this.tab1_groupBox1.Location = new System.Drawing.Point(8, 6);
-            this.tab1_groupBox1.Name = "tab1_groupBox1";
-            this.tab1_groupBox1.Size = new System.Drawing.Size(171, 50);
-            this.tab1_groupBox1.TabIndex = 0;
-            this.tab1_groupBox1.TabStop = false;
-            this.tab1_groupBox1.Text = "Ilość botów (min && max)";
+            this.tab1_groupBox3.Controls.Add(this.tab1_button4);
+            this.tab1_groupBox3.Controls.Add(this.tab1_button3);
+            this.tab1_groupBox3.Controls.Add(this.tab1_label2);
+            this.tab1_groupBox3.Location = new System.Drawing.Point(185, 6);
+            this.tab1_groupBox3.Name = "tab1_groupBox3";
+            this.tab1_groupBox3.Size = new System.Drawing.Size(186, 106);
+            this.tab1_groupBox3.TabIndex = 3;
+            this.tab1_groupBox3.TabStop = false;
+            this.tab1_groupBox3.Text = "Przerozne opcje";
             // 
-            // tab1_button1
+            // tab1_button3
             // 
-            this.tab1_button1.Location = new System.Drawing.Point(132, 19);
-            this.tab1_button1.Name = "tab1_button1";
-            this.tab1_button1.Size = new System.Drawing.Size(33, 20);
-            this.tab1_button1.TabIndex = 1;
-            this.tab1_button1.Text = "OK";
-            this.tab1_button1.UseVisualStyleBackColor = true;
-            this.tab1_button1.Click += new System.EventHandler(this.tab1_button1_Click);
+            this.tab1_button3.Location = new System.Drawing.Point(9, 19);
+            this.tab1_button3.Name = "tab1_button3";
+            this.tab1_button3.Size = new System.Drawing.Size(171, 23);
+            this.tab1_button3.TabIndex = 2;
+            this.tab1_button3.Text = "Level Tag przy nicku botów";
+            this.tab1_button3.UseVisualStyleBackColor = true;
+            this.tab1_button3.Click += new System.EventHandler(this.tab1_button3_Click);
             // 
-            // tab1_numericUpDown1
+            // tab1_label2
             // 
-            this.tab1_numericUpDown1.Location = new System.Drawing.Point(6, 19);
-            this.tab1_numericUpDown1.Maximum = new decimal(new int[] {
-            31,
-            0,
-            0,
-            0});
-            this.tab1_numericUpDown1.Name = "tab1_numericUpDown1";
-            this.tab1_numericUpDown1.Size = new System.Drawing.Size(120, 20);
-            this.tab1_numericUpDown1.TabIndex = 0;
+            this.tab1_label2.AutoSize = true;
+            this.tab1_label2.Location = new System.Drawing.Point(6, 82);
+            this.tab1_label2.Name = "tab1_label2";
+            this.tab1_label2.Size = new System.Drawing.Size(16, 13);
+            this.tab1_label2.TabIndex = 0;
+            this.tab1_label2.Text = "...";
             // 
             // tab1_groupBox2
             // 
@@ -283,35 +282,48 @@
             0,
             0});
             // 
-            // tab1_groupBox3
+            // tab1_groupBox1
             // 
-            this.tab1_groupBox3.Controls.Add(this.tab1_button3);
-            this.tab1_groupBox3.Controls.Add(this.tab1_label2);
-            this.tab1_groupBox3.Location = new System.Drawing.Point(185, 6);
-            this.tab1_groupBox3.Name = "tab1_groupBox3";
-            this.tab1_groupBox3.Size = new System.Drawing.Size(186, 106);
-            this.tab1_groupBox3.TabIndex = 3;
-            this.tab1_groupBox3.TabStop = false;
-            this.tab1_groupBox3.Text = "Przerozne opcje";
+            this.tab1_groupBox1.Controls.Add(this.tab1_button1);
+            this.tab1_groupBox1.Controls.Add(this.tab1_numericUpDown1);
+            this.tab1_groupBox1.Location = new System.Drawing.Point(8, 6);
+            this.tab1_groupBox1.Name = "tab1_groupBox1";
+            this.tab1_groupBox1.Size = new System.Drawing.Size(171, 50);
+            this.tab1_groupBox1.TabIndex = 0;
+            this.tab1_groupBox1.TabStop = false;
+            this.tab1_groupBox1.Text = "Ilość botów (min && max)";
             // 
-            // tab1_label2
+            // tab1_button1
             // 
-            this.tab1_label2.AutoSize = true;
-            this.tab1_label2.Location = new System.Drawing.Point(6, 82);
-            this.tab1_label2.Name = "tab1_label2";
-            this.tab1_label2.Size = new System.Drawing.Size(16, 13);
-            this.tab1_label2.TabIndex = 0;
-            this.tab1_label2.Text = "...";
+            this.tab1_button1.Location = new System.Drawing.Point(132, 19);
+            this.tab1_button1.Name = "tab1_button1";
+            this.tab1_button1.Size = new System.Drawing.Size(33, 20);
+            this.tab1_button1.TabIndex = 1;
+            this.tab1_button1.Text = "OK";
+            this.tab1_button1.UseVisualStyleBackColor = true;
+            this.tab1_button1.Click += new System.EventHandler(this.tab1_button1_Click);
             // 
-            // tab1_button3
+            // tab1_numericUpDown1
             // 
-            this.tab1_button3.Location = new System.Drawing.Point(9, 19);
-            this.tab1_button3.Name = "tab1_button3";
-            this.tab1_button3.Size = new System.Drawing.Size(171, 23);
-            this.tab1_button3.TabIndex = 2;
-            this.tab1_button3.Text = "Level Tag przy nicku botów";
-            this.tab1_button3.UseVisualStyleBackColor = true;
-            this.tab1_button3.Click += new System.EventHandler(this.tab1_button3_Click);
+            this.tab1_numericUpDown1.Location = new System.Drawing.Point(6, 19);
+            this.tab1_numericUpDown1.Maximum = new decimal(new int[] {
+            31,
+            0,
+            0,
+            0});
+            this.tab1_numericUpDown1.Name = "tab1_numericUpDown1";
+            this.tab1_numericUpDown1.Size = new System.Drawing.Size(120, 20);
+            this.tab1_numericUpDown1.TabIndex = 0;
+            // 
+            // tab1_button4
+            // 
+            this.tab1_button4.Location = new System.Drawing.Point(9, 48);
+            this.tab1_button4.Name = "tab1_button4";
+            this.tab1_button4.Size = new System.Drawing.Size(171, 23);
+            this.tab1_button4.TabIndex = 3;
+            this.tab1_button4.Text = "Losowy kolor";
+            this.tab1_button4.UseVisualStyleBackColor = true;
+            this.tab1_button4.Click += new System.EventHandler(this.tab1_button4_Click);
             // 
             // MainForm
             // 
@@ -331,12 +343,12 @@
             this.tabControl1.ResumeLayout(false);
             this.mainTab.ResumeLayout(false);
             this.tab1.ResumeLayout(false);
-            this.tab1_groupBox1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.tab1_numericUpDown1)).EndInit();
-            this.tab1_groupBox2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.tab1_numericUpDown2)).EndInit();
             this.tab1_groupBox3.ResumeLayout(false);
             this.tab1_groupBox3.PerformLayout();
+            this.tab1_groupBox2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.tab1_numericUpDown2)).EndInit();
+            this.tab1_groupBox1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.tab1_numericUpDown1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -366,6 +378,7 @@
         private System.Windows.Forms.GroupBox tab1_groupBox3;
         private System.Windows.Forms.Button tab1_button3;
         private System.Windows.Forms.Label tab1_label2;
+        private System.Windows.Forms.Button tab1_button4;
     }
 }
 

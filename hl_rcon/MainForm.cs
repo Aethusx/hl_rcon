@@ -121,6 +121,16 @@ namespace hl_rcon
             tab1_label2.Text = "level_tag: " + (flag ? "off" : "on");
 
         }
+
+        private void tab1_button4_Click(object sender, EventArgs e)
+        {
+            string reply = SendRconCommand("jk_botti random_color");
+            if (reply == null && !reply.StartsWith("[jk_botti"))
+                return;
+            bool flag = reply.Contains("ENABLED");
+            SendRconCommand("jk_botti random_color " + (flag ? "0" : "1"));
+            tab1_label2.Text = "random_color: " + (flag ? "off" : "on");
+        }
     }
 }
 
