@@ -63,6 +63,10 @@
             this.tab2_checkBox2 = new System.Windows.Forms.CheckBox();
             this.tab2_checkBox3 = new System.Windows.Forms.CheckBox();
             this.tab2_button3 = new System.Windows.Forms.Button();
+            this.tab2_groupBox3 = new System.Windows.Forms.GroupBox();
+            this.tab2_button5 = new System.Windows.Forms.Button();
+            this.tab2_button4 = new System.Windows.Forms.Button();
+            this.tab2_numericUpDown2 = new System.Windows.Forms.NumericUpDown();
             this.groupBoxRconConsole.SuspendLayout();
             this.groupBoxServer.SuspendLayout();
             this.tabControl1.SuspendLayout();
@@ -77,6 +81,8 @@
             this.tab2_groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tab2_numericUpDown1)).BeginInit();
             this.tab2_groupBox2.SuspendLayout();
+            this.tab2_groupBox3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tab2_numericUpDown2)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBoxRconConsole
@@ -354,6 +360,7 @@
             // 
             // tab2
             // 
+            this.tab2.Controls.Add(this.tab2_groupBox3);
             this.tab2.Controls.Add(this.tab2_groupBox2);
             this.tab2.Controls.Add(this.tab2_groupBox1);
             this.tab2.Location = new System.Drawing.Point(4, 22);
@@ -373,7 +380,7 @@
             this.tab2_groupBox1.Size = new System.Drawing.Size(157, 52);
             this.tab2_groupBox1.TabIndex = 0;
             this.tab2_groupBox1.TabStop = false;
-            this.tab2_groupBox1.Text = "Grawitacja";
+            this.tab2_groupBox1.Text = "Grawitacja (sv_gravity)";
             // 
             // tab2_numericUpDown1
             // 
@@ -468,6 +475,50 @@
             this.tab2_button3.UseVisualStyleBackColor = true;
             this.tab2_button3.Click += new System.EventHandler(this.tab2_button3_Click);
             // 
+            // tab2_groupBox3
+            // 
+            this.tab2_groupBox3.Controls.Add(this.tab2_button5);
+            this.tab2_groupBox3.Controls.Add(this.tab2_button4);
+            this.tab2_groupBox3.Controls.Add(this.tab2_numericUpDown2);
+            this.tab2_groupBox3.Location = new System.Drawing.Point(8, 70);
+            this.tab2_groupBox3.Name = "tab2_groupBox3";
+            this.tab2_groupBox3.Size = new System.Drawing.Size(157, 52);
+            this.tab2_groupBox3.TabIndex = 3;
+            this.tab2_groupBox3.TabStop = false;
+            this.tab2_groupBox3.Text = "Maks. prędkość (maxspeed)";
+            // 
+            // tab2_button5
+            // 
+            this.tab2_button5.Location = new System.Drawing.Point(116, 19);
+            this.tab2_button5.Name = "tab2_button5";
+            this.tab2_button5.Size = new System.Drawing.Size(31, 20);
+            this.tab2_button5.TabIndex = 2;
+            this.tab2_button5.Text = "S";
+            this.tab2_button5.UseVisualStyleBackColor = true;
+            this.tab2_button5.Click += new System.EventHandler(this.tab2_button5_Click);
+            // 
+            // tab2_button4
+            // 
+            this.tab2_button4.Location = new System.Drawing.Point(82, 19);
+            this.tab2_button4.Name = "tab2_button4";
+            this.tab2_button4.Size = new System.Drawing.Size(31, 20);
+            this.tab2_button4.TabIndex = 1;
+            this.tab2_button4.Text = "Ok";
+            this.tab2_button4.UseVisualStyleBackColor = true;
+            this.tab2_button4.Click += new System.EventHandler(this.tab2_button4_Click);
+            // 
+            // tab2_numericUpDown2
+            // 
+            this.tab2_numericUpDown2.Location = new System.Drawing.Point(6, 19);
+            this.tab2_numericUpDown2.Maximum = new decimal(new int[] {
+            10000,
+            0,
+            0,
+            0});
+            this.tab2_numericUpDown2.Name = "tab2_numericUpDown2";
+            this.tab2_numericUpDown2.Size = new System.Drawing.Size(70, 20);
+            this.tab2_numericUpDown2.TabIndex = 0;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -497,6 +548,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.tab2_numericUpDown1)).EndInit();
             this.tab2_groupBox2.ResumeLayout(false);
             this.tab2_groupBox2.PerformLayout();
+            this.tab2_groupBox3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.tab2_numericUpDown2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -538,6 +591,10 @@
         private System.Windows.Forms.CheckBox tab2_checkBox2;
         private System.Windows.Forms.CheckBox tab2_checkBox3;
         private System.Windows.Forms.Button tab2_button3;
+        private System.Windows.Forms.GroupBox tab2_groupBox3;
+        private System.Windows.Forms.Button tab2_button5;
+        private System.Windows.Forms.Button tab2_button4;
+        private System.Windows.Forms.NumericUpDown tab2_numericUpDown2;
     }
 }
 

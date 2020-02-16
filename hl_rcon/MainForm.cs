@@ -213,6 +213,16 @@ namespace hl_rcon
             tab2_checkBox2.Checked = tab2_SendAndHandleRconCommand("mp_flashlight").BoolValue() ?? false;
             tab2_checkBox3.Checked = tab2_SendAndHandleRconCommand("mp_footsteps").BoolValue() ?? false;
         }
+
+        private void tab2_button4_Click(object sender, EventArgs e)
+        {
+            SendRconCommand("sv_maxspeed " + tab2_numericUpDown2.Value);
+        }
+
+        private void tab2_button5_Click(object sender, EventArgs e)
+        {
+            tab2_numericUpDown2.Value = tab2_SendAndHandleRconCommand("sv_maxspeed").DecimalValue();
+        }
     }
 }
 
