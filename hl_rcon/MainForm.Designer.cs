@@ -60,6 +60,7 @@
             this.tab2_button2 = new System.Windows.Forms.Button();
             this.tab2_groupBox2 = new System.Windows.Forms.GroupBox();
             this.tab2_checkBox1 = new System.Windows.Forms.CheckBox();
+            this.tab2_checkBox2 = new System.Windows.Forms.CheckBox();
             this.groupBoxRconConsole.SuspendLayout();
             this.groupBoxServer.SuspendLayout();
             this.tabControl1.SuspendLayout();
@@ -411,24 +412,36 @@
             // 
             // tab2_groupBox2
             // 
+            this.tab2_groupBox2.Controls.Add(this.tab2_checkBox2);
             this.tab2_groupBox2.Controls.Add(this.tab2_checkBox1);
             this.tab2_groupBox2.Location = new System.Drawing.Point(176, 12);
             this.tab2_groupBox2.Name = "tab2_groupBox2";
             this.tab2_groupBox2.Size = new System.Drawing.Size(195, 127);
             this.tab2_groupBox2.TabIndex = 1;
             this.tab2_groupBox2.TabStop = false;
-            this.tab2_groupBox2.Text = "groupBox1";
+            this.tab2_groupBox2.Text = "Opcje";
             // 
             // tab2_checkBox1
             // 
             this.tab2_checkBox1.AutoSize = true;
             this.tab2_checkBox1.Location = new System.Drawing.Point(6, 19);
             this.tab2_checkBox1.Name = "tab2_checkBox1";
-            this.tab2_checkBox1.Size = new System.Drawing.Size(75, 17);
+            this.tab2_checkBox1.Size = new System.Drawing.Size(175, 17);
             this.tab2_checkBox1.TabIndex = 0;
-            this.tab2_checkBox1.Text = "sv_cheats";
+            this.tab2_checkBox1.Text = "sv_cheats     (uzywanie kodów)";
             this.tab2_checkBox1.UseVisualStyleBackColor = true;
             this.tab2_checkBox1.CheckedChanged += new System.EventHandler(this.tab2_checkBox1_CheckedChanged);
+            // 
+            // tab2_checkBox2
+            // 
+            this.tab2_checkBox2.AutoSize = true;
+            this.tab2_checkBox2.Location = new System.Drawing.Point(6, 42);
+            this.tab2_checkBox2.Name = "tab2_checkBox2";
+            this.tab2_checkBox2.Size = new System.Drawing.Size(171, 17);
+            this.tab2_checkBox2.TabIndex = 1;
+            this.tab2_checkBox2.Text = "mp_flashlight (uzywanie latarki)";
+            this.tab2_checkBox2.UseVisualStyleBackColor = true;
+            this.tab2_checkBox2.CheckedChanged += new System.EventHandler(this.tab2_checkBox2_CheckedChanged);
             // 
             // MainForm
             // 
@@ -497,6 +510,7 @@
         private System.Windows.Forms.Button tab2_button2;
         private System.Windows.Forms.GroupBox tab2_groupBox2;
         private System.Windows.Forms.CheckBox tab2_checkBox1;
+        private System.Windows.Forms.CheckBox tab2_checkBox2;
     }
 }
 

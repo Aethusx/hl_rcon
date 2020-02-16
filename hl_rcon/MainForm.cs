@@ -186,6 +186,11 @@ namespace hl_rcon
         {
             SendRconCommand("sv_cheats " + BoolToString(tab2_checkBox1.Checked));
         }
+
+        private void tab2_checkBox2_CheckedChanged(object sender, EventArgs e)
+        {
+            SendRconCommand("mp_flashlight " + BoolToString(tab2_checkBox2.Checked));
+        }
     }
 }
 
