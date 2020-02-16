@@ -67,6 +67,10 @@
             this.tab2_button5 = new System.Windows.Forms.Button();
             this.tab2_button4 = new System.Windows.Forms.Button();
             this.tab2_numericUpDown2 = new System.Windows.Forms.NumericUpDown();
+            this.tab2_groupBox4 = new System.Windows.Forms.GroupBox();
+            this.tab2_comboBox1 = new System.Windows.Forms.ComboBox();
+            this.tab2_button6 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.groupBoxRconConsole.SuspendLayout();
             this.groupBoxServer.SuspendLayout();
             this.tabControl1.SuspendLayout();
@@ -83,6 +87,7 @@
             this.tab2_groupBox2.SuspendLayout();
             this.tab2_groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tab2_numericUpDown2)).BeginInit();
+            this.tab2_groupBox4.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBoxRconConsole
@@ -360,6 +365,7 @@
             // 
             // tab2
             // 
+            this.tab2.Controls.Add(this.tab2_groupBox4);
             this.tab2.Controls.Add(this.tab2_groupBox3);
             this.tab2.Controls.Add(this.tab2_groupBox2);
             this.tab2.Controls.Add(this.tab2_groupBox1);
@@ -519,6 +525,46 @@
             this.tab2_numericUpDown2.Size = new System.Drawing.Size(70, 20);
             this.tab2_numericUpDown2.TabIndex = 0;
             // 
+            // tab2_groupBox4
+            // 
+            this.tab2_groupBox4.Controls.Add(this.button1);
+            this.tab2_groupBox4.Controls.Add(this.tab2_button6);
+            this.tab2_groupBox4.Controls.Add(this.tab2_comboBox1);
+            this.tab2_groupBox4.Location = new System.Drawing.Point(8, 128);
+            this.tab2_groupBox4.Name = "tab2_groupBox4";
+            this.tab2_groupBox4.Size = new System.Drawing.Size(157, 77);
+            this.tab2_groupBox4.TabIndex = 4;
+            this.tab2_groupBox4.TabStop = false;
+            this.tab2_groupBox4.Text = "Zmien mapke";
+            // 
+            // tab2_comboBox1
+            // 
+            this.tab2_comboBox1.FormattingEnabled = true;
+            this.tab2_comboBox1.Location = new System.Drawing.Point(6, 19);
+            this.tab2_comboBox1.Name = "tab2_comboBox1";
+            this.tab2_comboBox1.Size = new System.Drawing.Size(141, 21);
+            this.tab2_comboBox1.TabIndex = 0;
+            // 
+            // tab2_button6
+            // 
+            this.tab2_button6.Location = new System.Drawing.Point(82, 46);
+            this.tab2_button6.Name = "tab2_button6";
+            this.tab2_button6.Size = new System.Drawing.Size(65, 21);
+            this.tab2_button6.TabIndex = 1;
+            this.tab2_button6.Text = "Wczytaj";
+            this.tab2_button6.UseVisualStyleBackColor = true;
+            this.tab2_button6.Click += new System.EventHandler(this.tab2_button6_Click);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(6, 46);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(70, 21);
+            this.button1.TabIndex = 2;
+            this.button1.Text = "Ustaw";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -550,6 +596,7 @@
             this.tab2_groupBox2.PerformLayout();
             this.tab2_groupBox3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.tab2_numericUpDown2)).EndInit();
+            this.tab2_groupBox4.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -595,6 +642,10 @@
         private System.Windows.Forms.Button tab2_button5;
         private System.Windows.Forms.Button tab2_button4;
         private System.Windows.Forms.NumericUpDown tab2_numericUpDown2;
+        private System.Windows.Forms.GroupBox tab2_groupBox4;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button tab2_button6;
+        private System.Windows.Forms.ComboBox tab2_comboBox1;
     }
 }
 

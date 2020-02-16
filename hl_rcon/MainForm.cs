@@ -223,6 +223,24 @@ namespace hl_rcon
         {
             tab2_numericUpDown2.Value = tab2_SendAndHandleRconCommand("sv_maxspeed").DecimalValue();
         }
+
+        private void tab2_button6_Click(object sender, EventArgs e)
+        {
+            string reply = SendRconCommand("maps *");
+            if (!reply.Contains("------------"))
+                return;
+
+            tab2_comboBox1.Items.Clear();
+            string[] maps = reply.Split('\n');
+
+            for (int i = 1; i < maps.Length - 1;i++) /* skipuje pierwsza bo to jest separator */
+                tab2_comboBox1.Items.Add(maps[i].Substring(0, maps[i].Length - 4)); /* trzeba wykasowac .bsp */
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            SendRconCommand("changelevel " + tab2_comboBox1.Text);
+        }
     }
 }
 
