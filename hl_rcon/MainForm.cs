@@ -99,7 +99,7 @@ namespace hl_rcon
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message, "RCON Erorr", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(ex.Message, "RCON Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
